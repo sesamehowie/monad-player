@@ -3,8 +3,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-MIN_PLAYERS = 3
-MAX_PLAYERS = 7
+MIN_PLAYERS = 1
+MAX_PLAYERS = 2
 CONTRACT_OWNER_PKEY = os.environ.get("CONTRACT_OWNER_PKEY")
 LOTTERY_CA = os.environ.get("LOTTERY_CA")
 MONAD_RPC_URL = os.environ.get("MONAD_RPC_URL")

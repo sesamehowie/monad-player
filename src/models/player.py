@@ -10,7 +10,6 @@ getcontext().prec = 4
 class Player(EthClient):
     def __init__(self, account_name, private_key, network=Monad):
         super().__init__(account_name, private_key, network)
-        self.interface = MonRollInterface
 
     def bet(self, wide_range: bool = True):
         min_amount = Decimal("0.05")

@@ -60,7 +60,7 @@ class AutoPlayer:
         if len(self._eligible_players) >= MAX_PLAYERS:
             random_players = random.sample(self._eligible_players, player_count)
         elif MIN_PLAYERS < len(self._eligible_players) < MAX_PLAYERS:
-            random_players = random.sample(MIN_PLAYERS, len(self._eligible_players) - 1)
+            random_players = random.sample(self._eligible_players, random.randint(MIN_PLAYERS, len(self._eligible_players) - 1))
         else:
             random.shuffle(self._eligible_players)
             random_players = self._eligible_players
